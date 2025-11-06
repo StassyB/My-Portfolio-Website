@@ -13,7 +13,7 @@ const projectList = [
   {
     title: "Sales Management",
     description: "Sales management dashboard built with MUI & React.",
-    link: "https://your-sales-management-app.com",
+    link: "https://sals-management.vercel.app/",
     image: "/sales.png",
   },
   {
@@ -25,7 +25,7 @@ const projectList = [
   {
     title: "My Portfolio Website",
     description: "Responsive React portfolio with MUI components and smooth animations.",
-    link: "https://yourportfolio.com",
+    link: "my-portfolio-website-roan-theta.vercel.app",
     image: "/portfolio.png",
   },
 ];
@@ -112,8 +112,7 @@ const Projects = () => {
                       }}
                       className="view-btn"
                     >
-                      View Project
-                    </Button>
+                                       </Button>
                   </Box>
                 )}
                 <CardContent>
