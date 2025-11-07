@@ -6,38 +6,40 @@ import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 const ScrollToTopButton = () => {
   const [visible, setVisible] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      // Show button only after scrolling past Hero section
-      const heroHeight = document.getElementById("hero")?.offsetHeight || 0;
-      if (window.scrollY > heroHeight) {
-        setVisible(true);
-      } else {
-        setVisible(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  const toggleVisibility = () => {
+    if (window.pageYOffset > 300) {
+      setVisible(true);
+    } else {
+      setVisible(false);
+    }
+  };
 
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   };
+
+  useEffect(() => {
+    window.addEventListener("scroll", toggleVisibility);
+    return () => window.removeEventListener("scroll", toggleVisibility);
+  }, []);
 
   return (
     <Fab
       color="primary"
       onClick={scrollToTop}
-      sx={{
-        position: "fixed",
-        bottom: 40,
-        right: 40,
-        display: visible ? "flex" : "none",
-        zIndex: 1000,
-        transition: "opacity 0.3s",
-      }}
-      aria-label="scroll to top"
+     sx={{
+  position: "fixed",
+  bottom: 30,
+  right: 30,
+  display: visible ? "flex" : "none",
+  zIndex: 1000,
+  "&:hover": { transform: "scale(1.1)" },
+  transition: "transform 0.2s",
+}}
+
     >
       <KeyboardArrowUpIcon />
     </Fab>
