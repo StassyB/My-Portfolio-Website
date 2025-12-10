@@ -51,7 +51,7 @@ const Contact = () => {
           <FaEnvelope /> bettstassy1@gmail.com
         </Link>
 
-        <Link href="tel:+254 796263121" underline="none" sx={{
+        <Link href="tel:+254 796 263121" underline="none" sx={{
           display: "flex",
           alignItems: "center",
           gap: 1,
@@ -59,7 +59,7 @@ const Contact = () => {
           fontWeight: 500,
           "&:hover": { color: "#34a853" },
         }}>
-          <FaPhone /> +254 712 671465
+          <FaPhone /> +254 796 263121
         </Link>
       </Stack>
 
@@ -147,4 +147,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
