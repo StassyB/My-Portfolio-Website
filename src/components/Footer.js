@@ -6,8 +6,9 @@ export default function Footer() {
   return (
 <Box sx={{ py: 2, textAlign: "center", backgroundColor: "#102a43", color: "#fff" }}>
       <Typography variant="body2">
-        &copy; {new Date().getFullYear()} Stassy Medina. All Rights Reserved.
+        &copy; {new Date().getFullYear()} Stassy Bett. All Rights Reserved.
       </Typography>
     </Box>
   );
 }
+
