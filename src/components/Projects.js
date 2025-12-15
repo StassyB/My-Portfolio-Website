@@ -22,6 +22,12 @@ const projectList = [
     link: "https://restaurant-wine-mng.vercel.app/",
     image: "/wine.png",
   },
+ {
+  title: "Dermatology Specialized Clinic",
+  description: "Expert dermatology care focused on healthy skin and overall well-being.",
+  link: "https://dr-fysel.vercel.app/",
+  image: "/DR.png",
+},
   {
     title: "My Portfolio Website",
     description: "Responsive React portfolio with MUI components and smooth animations.",
@@ -161,3 +167,4 @@ const Projects = () => {
 };
 
 export default Projects;
+
