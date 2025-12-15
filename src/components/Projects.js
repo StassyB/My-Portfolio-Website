@@ -26,7 +26,7 @@ const projectList = [
   title: "Dermatology Specialized Clinic",
   description: "Expert dermatology care focused on healthy skin and overall well-being.",
   link: "https://dr-fysel.vercel.app/",
-  image: "/DR.png",
+  image: "/DrFysel.png",
 },
   {
     title: "My Portfolio Website",
@@ -167,4 +167,5 @@ const Projects = () => {
 };
 
 export default Projects;
+
 
