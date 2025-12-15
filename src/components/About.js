@@ -23,8 +23,8 @@ export default function About() {
           About Me
         </Typography>
         <Typography variant="body1" sx={{ maxWidth: 700, mx: "auto", mb: 5 }}>
-     I’m a Front-End Developer and UI/UX Designer who loves transforming ideas into seamless, engaging, and responsive web experiences.
-       My goal is to build digital solutions that are not only beautiful but also fast, functional, and impactful, with a vision to grow into DevOps, Cloud, and AI in the future.
+     I’m a Front-End Developer and UI/UX Designer who loves transforming ideas into seamless, engaging, and responsive web experiences. <br>
+      My goal is to build digital solutions that are not only beautiful but also fast, functional, and impactful, with a vision to grow into DevOps, Cloud, and AI in the future.
            </Typography>
       </Fade>
 
@@ -45,4 +45,5 @@ export default function About() {
     </Container>
   );
 }
+
 
